@@ -101,3 +101,31 @@ function revedrseTriangleNumbers(n){
     }
 }
 revedrseTriangleNumbers(5)
+
+// 7.      *
+//       * * *
+//     * * * * *
+//   * * * * * * *
+// * * * * * * * * * 
+
+function pyramidStars(n){
+    for(let i = 0; i < n; i++){
+        let row = ""
+
+        //calculate space
+        for(let j = 0; j < n-i-1; j++){
+            row+= " "
+        }
+        //calculate star
+        for(let j =0; j < 2*i+1; j++){
+            row+= "*"
+        }
+        // //calculate space
+        // for(let j = 0; j < n-i-1; j++){
+        //     row+= " "
+        // }
+
+        console.log(row)
+    }
+}
+pyramidStars(5)
