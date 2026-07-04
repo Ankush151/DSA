@@ -63,7 +63,23 @@ function numberTriangle2(n){
         for(let j = 1; j <= i; j++){
             row+= `${i} `
         }
-        console.log(row)
+        // console.log(row)
     }
 }
 numberTriangle2(5)
+
+// 5.   * * * * *
+//      * * * *
+//      * * *
+//      * *
+//      *   
+function reverseTriangleStars(n){
+    for(let i = 0; i<= n; i++){
+        let row = ""
+        for(let j=0; j<n-i+1; j++){
+            row+="* "
+        }
+        console.log(row)
+    }
+}
+reverseTriangleStars(5)
