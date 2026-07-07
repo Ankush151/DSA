@@ -14,7 +14,7 @@ function printSquarePattern(n) {
         // console.log(row);
     }
 }
-await printSquarePattern(4);
+printSquarePattern(4);
 
 // 2.   *
 //      * *
@@ -147,7 +147,26 @@ function reversePyramidStars(n){
         for(let j = 0; j < i; j++){
             row += " "
         }    
-        console.log(row)
+        // console.log(row)
     }
 }
 reversePyramidStars(5)
+
+function rightSideTriangle(n){
+    for(let i = 0; i <= 2*n-1; i++){
+        let row = ""
+
+        if(i > n){
+            for(let j = 0; j < 2*n -i; j++){
+                row += "* "
+            }
+        } 
+        else {
+            for(let j = 0; j < i; j++){
+                row += "* "
+            }
+        }
+        console.log(row)
+    }
+}
+rightSideTriangle(5)
