@@ -131,6 +131,13 @@ function pyramidStars(n){
 pyramidStars(5)
 
 
+// 9. * * * * * * * * * 
+//     * * * * * * *  
+//       * * * * *   
+//         * * *    
+//           *  
+
+
 function reversePyramidStars(n){
     for(let i = 0; i< n; i++){
         let row = ""
@@ -147,10 +154,21 @@ function reversePyramidStars(n){
         for(let j = 0; j < i; j++){
             row += " "
         }    
-        // console.log(row)
+        console.log(row)
     }
 }
 reversePyramidStars(5)
+
+
+// 9.  * 
+    // * * 
+    // * * * 
+    // * * * * 
+    // * * * * * 
+    // * * * * 
+    // * * * 
+    // * * 
+    // * 
 
 function rightSideTriangle(n){
     for(let i = 0; i <= 2*n-1; i++){
