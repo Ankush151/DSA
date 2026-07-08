@@ -154,7 +154,7 @@ function reversePyramidStars(n){
         for(let j = 0; j < i; j++){
             row += " "
         }    
-        console.log(row)
+        // console.log(row)
     }
 }
 reversePyramidStars(5)
@@ -184,7 +184,27 @@ function rightSideTriangle(n){
                 row += "* "
             }
         }
-        console.log(row)
+        // console.log(row)
     }
 }
 rightSideTriangle(5)
+
+
+
+function rightAngleTriangle(n) {
+    for (let i = 0; i < n; i++) {
+        let row = "";
+
+        // Decide the starting number
+        let start = (i % 2 === 0) ? 1 : 0;
+
+        for (let j = 0; j <= i; j++) {
+            row += start;
+            start = 1 - start; // Toggle between 1 and 0
+        }
+
+        console.log(row);
+    }
+}
+
+rightAngleTriangle(5);
