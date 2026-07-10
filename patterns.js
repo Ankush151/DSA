@@ -238,8 +238,9 @@ function numberMountain(n) {
         
         // Reduce spaces for the next row
         space -= 2;
-        console.log(row);
+        // console.log(row);
     }
 }
 
 numberMountain(5);
+
