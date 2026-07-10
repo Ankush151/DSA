@@ -190,7 +190,12 @@ function rightSideTriangle(n){
 rightSideTriangle(5)
 
 
-
+// 10.
+// 1
+// 01
+// 101
+// 0101
+// 10101
 function rightAngleTriangle(n) {
     for (let i = 0; i < n; i++) {
         let row = "";
@@ -203,8 +208,38 @@ function rightAngleTriangle(n) {
             start = 1 - start; // Toggle between 1 and 0
         }
 
-        console.log(row);
+        // console.log(row);
     }
 }
 
 rightAngleTriangle(5);
+
+function numberMountain(n) {
+    let space = 2 * (n - 1);
+
+    for (let i = 0; i < n; i++) {
+        let row = "";
+
+        // Left numbers
+        for (let j = 1; j <= i + 1; j++) {
+            row += j + " ";
+        }
+
+        // Spaces
+        for (let j = 0; j < space; j++) {
+            row += "  ";
+        }
+
+        // Right numbers
+        for (let j = i + 1; j >= 1; j--) {
+            row += j + " ";
+        }
+
+        
+        // Reduce spaces for the next row
+        space -= 2;
+        console.log(row);
+    }
+}
+
+numberMountain(5);
